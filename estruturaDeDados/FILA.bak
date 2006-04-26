@@ -1,0 +1,165 @@
+#include <iostream.h>
+#include <stdio.h>
+#include <conio.h>
+#include <alloc.h>
+#include <process.h>
+#define TRUE 1
+
+void menu();
+void incluir();
+void listar();
+void consultar();
+void remover();
+
+struct ficha
+{  int cod;
+	char nome[10];
+	struct ficha *prox;
+};
+
+struct ficha *prim,*atual,*novo,*ant;
+
+void main()
+{
+ char ch;
+ prim=NULL;
+ while(TRUE)
+ {
+  menu();
+  while(TRUE)
+	{ch=getch();
+	 if (ch=='I' || ch=='i' || ch=='L' || ch=='l'
+		  || ch=='T' || ch=='t' || ch=='c' || ch=='C'
+		  || ch=='r' || ch=='R')
+		 break;
+	}
+	switch(ch)
+	 { case 'i':
+		case 'I': incluir();
+					 break;
+		case 'l':
+		case 'L': listar();
+					 break;
+		case 'c':
+		case 'C': consultar();
+					 break;
+		case 'r':
+		case 'R': remover();
+					 break;
+		case 't':
+		case 'T': exit(1);
+	  }
+  }
+}
+
+void menu()
+{
+  clrscr();
+  gotoxy(20,6);
+  cout <<" Incluir\n";
+  gotoxy(20,8);
+  cout<<" Listar\n";
+  gotoxy(20,10);
+  cout<<" Consultar";
+  gotoxy(20,12);
+  cout<<" Remover";
+  gotoxy(20,14);
+  cout<<" Terminar";
+}
+
+void incluir()
+{ //novo=(struct ficha*)malloc(sizeof(struct ficha));
+  novo=new(ficha);
+  clrscr();
+  cout<<"Codigo: ";
+  cin>> novo->cod;
+  cout<<"\nNome: ";
+  cin>> novo->nome;
+  novo->prox=NULL;
+  if (prim==NULL)
+		prim=novo;
+  else {
+		atual=prim;
+		ant=NULL;
+		int achou=0;
+		while( atual!=NULL && achou==0){
+			if (atual->cod > novo->cod) {
+				achou=1;
+			}
+			else {
+				ant=atual;
+				atual=atual->prox;
+			}
+		}
+		novo->prox=atual;
+		if (ant==NULL) {
+			prim;
+			prim->prox=novo;
+		}
+		else {
+			ant->prox=novo;
+			atual->prox=NULL;
+		}
+  }
+}
+
+void listar()
+{
+  clrscr();
+  if (prim==NULL )
+	{ cout <<"fila vazia...";
+	  getch();
+	}
+  else
+	{ atual=prim;
+	  while (atual !=NULL)
+		 {cout <<"Codigo: "<<atual->cod;
+		  cout <<"\nNome: "<<atual->nome;
+		  cout<<"\n\n";
+		  getch();
+		  atual=atual->prox;		  }
+	 }
+}
+
+void consultar()
+{ int n,achou=0;
+  clrscr();
+  if (prim==NULL )
+	{ cout <<"fila vazia...";
+	  getch();
+	}
+  else
+	{ cout <<"Codigo: ";
+	  cin>> n;
+	  atual=prim;
+	  while (atual !=NULL && achou==0 )
+		 { if (n==atual->cod)
+			 { cout <<"\nNome: "<<atual->nome;
+				achou=1;
+				getch();
+				break;
+			  }
+			atual=atual->prox;
+		  }
+		 if (achou==0)
+			{ cout <<"\n Codigo nao encontrado ...";
+			  getch();
+			 }
+		}
+ }
+
+void remover()
+{
+  clrscr();
+  if (prim==NULL )
+	 cout <<"Fila vazia...";
+  else
+	{ atual=prim;
+	  prim=prim->prox;
+	  cout <<"\nCodigo removido...";
+	  delete (atual);
+	 }
+	 getch();
+ }
+
+

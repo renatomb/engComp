@@ -1,0 +1,11 @@
+cpp: c:\renato\sources\estdados\ordena1.c:2 Could not find include file <iomanip.h>
+cpp: c:\renato\sources\estdados\ordena1.c:5 Could not find include file <dos.h>
+Warning c:\renato\sources\estdados\ordena1.c: 12  missing prototype for randomize
+Warning c:\renato\sources\estdados\ordena1.c: 16  assignment of pointer to const char to pointer to int
+Warning c:\renato\sources\estdados\ordena1.c: 18  missing prototype for random
+Error c:\renato\sources\estdados\ordena1.c: 42  undefined size for `incomplete struct time defined at c:\renato\sources\estdados\ordena1.c 42 t'
+Warning c:\renato\sources\estdados\ordena1.c: 43  missing prototype for gettime
+Error c:\renato\sources\estdados\ordena1.c: 44  unknown field `ti_hour' of `incomplete struct time defined at c:\renato\sources\estdados\ordena1.c 42'
+Error c:\renato\sources\estdados\ordena1.c: 45  unknown field `ti_min' of `incomplete struct time defined at c:\renato\sources\estdados\ordena1.c 42'
+Error c:\renato\sources\estdados\ordena1.c: 46  unknown field `ti_sec' of `incomplete struct time defined at c:\renato\sources\estdados\ordena1.c 42'
+Error c:\renato\sources\estdados\ordena1.c: 47  unknown field `ti_hund' of `incomplete struct time defined at c:\renato\sources\estdados\ordena1.c 42'
