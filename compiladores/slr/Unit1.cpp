@@ -1,0 +1,211 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+        : TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::nt_maisClick(TObject *Sender)
+{
+   naoterm->RowCount++;
+   slr->ColCount=naoterm->RowCount+2;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::nt_menosClick(TObject *Sender)
+{
+   naoterm->RowCount--;
+   slr->ColCount--;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::naotermSetEditText(TObject *Sender, int ACol,
+      int ARow, const AnsiString Value)
+{
+   for (int i=1;i<slr->ColCount-1;i++){
+      slr->Cells[i][0]=naoterm->Cells[0][i-1];
+   }
+   slr->Cells[slr->ColCount-1][0]="$";
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::rg_maisClick(TObject *Sender)
+{
+   regras->RowCount++;
+   for(int i=0;i<regras->RowCount;i++){
+      regras->Cells[0][i]=i+1;
+   }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::rg_menosClick(TObject *Sender)
+{
+   regras->RowCount--;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::slr_maisClick(TObject *Sender)
+{
+   slr->RowCount++;
+   transicoes->RowCount=slr->RowCount;
+   for(int i=1;i<slr->RowCount;i++){
+      slr->Cells[0][i]=i-1;
+   }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::slr_menosClick(TObject *Sender)
+{
+   slr->RowCount--;
+   transicoes->RowCount=slr->RowCount;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::regrasSetEditText(TObject *Sender, int ACol,
+      int ARow, const AnsiString Value)
+{
+   int colunas=0;
+   for(int i=0;i<regras->RowCount;i++){
+      if (regras->Cells[1][i] != "") {
+         bool existe=false;
+         for (int j=0;j<transicoes->ColCount;j++){
+            if (regras->Cells[1][i] == transicoes->Cells[j][0]) {
+               existe=true;
+            }
+         }
+         if (!existe) {
+            colunas++;
+            transicoes->ColCount=colunas;
+            transicoes->Cells[transicoes->ColCount-1][0]=regras->Cells[1][i];
+         }
+      }
+   }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::iniciaClick(TObject *Sender)
+{
+   status->RowCount=1;
+   pilha="0";
+   entrada=exp->Text+"$";
+   bool continua=true;
+   while (continua) {
+      status->Cells[0][status->RowCount]=pilha;
+      status->Cells[1][status->RowCount]=entrada;
+      status->Cells[2][status->RowCount-1]=acao;
+      status->RowCount++;
+      AnsiString nt_vez,num_vez,comando;
+      for (int h=0;h<naoterm->RowCount;h++) {
+         if (naoterm->Cells[0][h] == entrada.SubString(1,naoterm->Cells[0][h].Length())) {
+            nt_vez=naoterm->Cells[0][h];
+         }
+      }
+      if (nt_vez == "") {
+         nt_vez=entrada;
+      }
+      if (pilha.Length() > 1) {
+         for (int h=pilha.Length();h>0;h=h-1){
+            if (!((pilha[h] >= 48) && (pilha[h] <=57))) {
+               num_vez=pilha.SubString(h+1,pilha.Length()-h);
+               break;
+            }
+         }
+      }
+      else {
+         num_vez=pilha;
+      }
+      int lin,col;
+      lin=num_vez.ToInt()+1;
+      for (int r=1;r<slr->ColCount;r++){
+         if (slr->Cells[r][0] == nt_vez) {
+            col=r;
+            break;
+         }
+      }
+      comando=slr->Cells[col][lin];
+      if (comando == "") {
+         acao="Sentença recusada!!!";
+         continua=false;
+      }
+      else {
+         if (comando.UpperCase() == "AC") {
+            acao="Sentença ACEITA!!!";
+            continua=false;
+         }
+         else {
+            AnsiString subcomando,prox_tran;
+            subcomando=comando.SubString(1,1).UpperCase();
+            prox_tran=comando.SubString(2,comando.Length()-1);
+            if (subcomando == "E") {
+               acao=comando+": Empilha "+nt_vez+prox_tran;
+               pilha=pilha+nt_vez+prox_tran;
+               entrada=entrada.SubString(nt_vez.Length()+1,entrada.Length()-nt_vez.Length());
+            }
+            else {
+               if (subcomando == "R") {
+                  int linha_regra;
+                  AnsiString procuraregra,memoria,xyz;
+                  linha_regra=prox_tran.ToInt()-1;
+                  procuraregra=regras->Cells[2][linha_regra];
+                  acao=comando+": Reduz "+regras->Cells[1][linha_regra]+"=>"+procuraregra;
+                  memoria="";
+                  bool achei=false;
+                  while (!achei) {
+                     int ultimo;
+                     ultimo=pilha[pilha.Length()];
+                     if ((ultimo >= 48) && (ultimo <=57)) {
+                        pilha=pilha.SubString(1,pilha.Length()-1);
+                     }
+                     else {
+                        memoria=pilha.SubString(pilha.Length(),1)+memoria;
+                        pilha=pilha.SubString(1,pilha.Length()-1);
+                     }
+                     if (memoria == procuraregra) {
+                        xyz=pilha;
+                        pilha=pilha+regras->Cells[1][linha_regra];
+                        achei=true;
+                     }
+//                     ShowMessage("Pilha: "+pilha+"\nMemoria: "+memoria);
+                  }
+                  AnsiString procura_trans="";
+                  for (int q=xyz.Length();q>0;q=q-1) {
+                     int procurado;
+                     procurado=xyz[q];
+                     if (!((procurado >= 48) && (procurado <=57))) {
+                        procura_trans=xyz.SubString(q+1,xyz.Length()-q);
+                        break;
+                     }
+                  }
+                  if (procura_trans == "") {
+                     procura_trans=xyz;
+                  }
+                  acao=acao+" Transição ["+procura_trans+","+regras->Cells[1][linha_regra]+"]=";
+                  AnsiString proximatransicao;
+                  for (int x=0;x<transicoes->ColCount;x++) {
+                     if (transicoes->Cells[x][0] == regras->Cells[1][linha_regra]) {
+                        int lin_tab;
+                        lin_tab=procura_trans.ToInt()+1;
+                        proximatransicao=transicoes->Cells[x][lin_tab];
+                     }
+                  }
+                  acao=acao+proximatransicao;
+                  pilha=pilha+proximatransicao;
+               }
+               else {
+                  acao="Comando invalido: "+comando;
+                  continua=false;
+               }
+            }
+         }
+      }
+   }
+   status->Cells[0][status->RowCount]=pilha;
+   status->Cells[1][status->RowCount]=entrada;
+   status->Cells[2][status->RowCount-1]=acao;
+   status->Cells[0][0]="Pilha";
+   status->Cells[1][0]="Entrada";
+   status->Cells[2][0]="Ação";
+}
+//---------------------------------------------------------------------------

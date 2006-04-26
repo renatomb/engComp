@@ -1,0 +1,18 @@
+Begin DDE Information.
+    Last DDE Source:	1
+Begin DDE Source Definition.
+    Source Name:		renato
+    Application Name:		RSLINX
+    Topic Name:			automacao
+    DDE Source ID:		1
+    Request Initial Data:	1
+    Always Advise:		0
+    SuiteLink:			0
+    Begin DDE Points
+        G;0026:  I:1/16
+        ATUADOR;0025:  O:2/12
+        RELE;0024:  O:2/11
+        GATILHO;0023:  I:1/16
+    End DDE Points
+End DDE Source Definition.
+End DDE Information.

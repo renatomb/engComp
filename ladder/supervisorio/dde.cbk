@@ -1,0 +1,43 @@
+Begin DDE Information.
+    Last DDE Source:	1
+Begin DDE Source Definition.
+    Source Name:		renato
+    Application Name:		RSLINX
+    Topic Name:			automacao
+    DDE Source ID:		1
+    Request Initial Data:	1
+    Always Advise:		0
+    SuiteLink:			0
+    Begin DDE Points
+        TEMPO;0041:  T4:0.ACC
+        OPERADOR_B;0040:  I:1.0/9
+        OPERADOR_A;003F:  I:1.0/8
+        PRENSA;003E:  O:2.0/6
+        RELE_2;003D:  O:2.0/5
+        RELE_1;003C:  O:2.0/4
+        CHAVE_D2;003B:  I:1.0/7
+        CHAVE_D1;003A:  I:1.0/6
+        CHAVE_L2;0039:  I:1.0/5
+        CHAVE_L1;0038:  I:1.0/4
+        NIVEL_A;0037:  I:1.0/0
+        NIVEL_B;0036:  I:1.0/1
+        NIVEL_C;0035:  I:1.0/2
+        NIVEL_D;0034:  I:1.0/3
+        MOTOR_M1;0031:  O:2.0/2
+        MOTOR_M2;0030:  O:2.0/3
+        ALARME_A;002F:  O:2.0/1
+        VALVULA_P;002E:  O:2.0/0
+        EXTRA_MOTOR4;002D:  O:2.1/3
+        EXTRA_MOTOR3;002C:  O:2.1/2
+        EXTRA_MOTOR2;002B:  O:2.1/1
+        EXTRA_MOTOR1;002A:  O:2.1/0
+        BOTOEIRA_MOTORES;0029:  I:1.1/3
+        VERD1;0028:  O:2.1/4
+        VERD2;0027:  O:2.1/7
+        AMAR1;0026:  O:2.1/5
+        AMAR2;0025:  O:2.1/8
+        VERM1;0024:  O:2.1/6
+        VERM2;0023:  O:2.1/9
+    End DDE Points
+End DDE Source Definition.
+End DDE Information.

@@ -1,0 +1,27 @@
+Begin DDE Information.
+    Last DDE Source:	1
+Begin DDE Source Definition.
+    Source Name:		renato
+    Application Name:		rslinx
+    Topic Name:			rw
+    DDE Source ID:		1
+    Request Initial Data:	1
+    Always Advise:		0
+    SuiteLink:			0
+    Begin DDE Points
+        DJ;002F:  I:0/8
+        rotacao_motor;002E:  C5:0.ACC
+        btreset;002D:  B3:0/7
+        luz;002C:  O:0/3
+        sirene;002B:  O:0/4
+        sensor;002A:  B3:0/9
+        bt04;0029:  B3:0/1
+        bt03;0028:  B3:0/2
+        bt02;0027:  B3:0/6
+        bt01;0026:  B3:0/5
+        ch_supervisorio;0025:  B3:0/3
+        ch_local;0024:  B3:0/4
+        ch_sl02;0023:  B3:0/0
+    End DDE Points
+End DDE Source Definition.
+End DDE Information.
