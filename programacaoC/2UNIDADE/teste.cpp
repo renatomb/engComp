@@ -1,0 +1,73 @@
+#include <string.h>
+#include <stdio.h>
+#include <conio.h>
+#include <fstream.h>
+#define x 5
+
+struct dados {
+	int codigo;
+	int ano;
+//	char autor[20];
+	char titulo[20];
+//	char editora[15];
+};
+
+dados vetor[x];
+void organiza();
+
+void main() {
+	ifstream fin("lista.dat");
+//	ofstream fout("lista.dat");
+	for(int i=0;i<x;i++) {
+		fin.seekg(i*sizeof(dados));
+		fin.read((char*)&vetor[i],sizeof(dados));
+		cout << "\nCodigo: " << vetor[i].codigo;
+//		cout << "\nAutor: " << vetor[i].autor;
+		cout << "\nTitulo: " << vetor[i].titulo;
+		cout << "\nAno: " << vetor[i].ano;
+//		cout << "\nEditora: " << vetor[i].editora;
+	}
+/*
+	ifstream fin("lista.dat");
+	char ch;
+	int i=0,j=0;
+	while (fin.get(ch)) {
+		if (ch == '\n') {
+			i++;
+			j=0;
+		}
+		else {
+			vetor[i].nome[j]=ch;
+			j++;
+		}
+	}
+
+	cout << "\nVetor desordenado:";
+	for (i=0;i<x;i++)
+	cout << '\n' << vetor[i].nome;
+	cout << "\nPressione qualquer tecla para ver o vetor ordenado...";
+	getch();
+	clrscr();
+	organiza();
+	cout << "\nVetor ordenado:";
+	for (i=0;i<x;i++)
+	cout << '\n' << vetor[i].nome;
+*/
+}
+
+/*void organiza() {
+	int troca=0;
+	char aux[40];
+	do {
+		troca=0;
+		for (int i=0;i<(x-1);i++) {
+			if (strcmp(vetor[i].nome,vetor[i+1].nome) > 0) {
+				troca=1;
+				strcpy(aux,vetor[i].nome);
+				strcpy(vetor[i].nome,vetor[i+1].nome);
+				strcpy(vetor[i+1].nome,aux);
+			}
+		}
+	} while (troca > 0);
+}
+*/
