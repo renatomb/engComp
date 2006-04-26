@@ -1,0 +1,5 @@
+AnsiString opcode_table[59][3]={
+"ADD","18","3",
+"ADDF","58","3"
+};
+
