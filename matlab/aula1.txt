@@ -1,0 +1,25 @@
+! -> Executa comandos do sistema operacional.
+'-' n∆o Ç reconhecido como um comando interno 
+ou externo, um programa oper†vel ou um arquivo em lotes. 
+...
+edit erro.m
+disp(sprintf('%d',feature('SessionTool')))
+0
+;
+dbstatus
+
+dbstack
+dbstack
+;
+disp(which('erro'));
+c:\renato\sources\matlab\erro.m
+mdbstatus 'c:\renato\sources\matlab\erro.m'
+disp(which('erro'));
+c:\renato\sources\matlab\erro.m
+clear 'c:\renato\sources\matlab\erro.m'
+help erro
+
+  Esta funcao calcula o erro percentual.
+  Sintaxe: erro(valor real, valor esperado).
+
+diary off

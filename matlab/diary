@@ -1,0 +1,217 @@
+vce=[2 4 6 8 9.8];
+te=[5.61 11.71 20.47 36.00 95.54];
+e=10;
+r=10000;
+c=2200*10^-6;
+tal=r*c;
+t=0:150;
+for id=1:5
+tal_e(id)=-te(id)/(ln(1-(vce(id)/e)));
+end
+??? Undefined function or variable 'ln'.
+
+help log
+
+ LOG    Natural logarithm.
+    LOG(X) is the natural logarithm of the elements of X.
+    Complex results are produced if X is not positive.
+ 
+    See also LOG2, LOG10, EXP, LOGM.
+
+ Overloaded methods
+    help sym/log.m
+
+for id=1:5
+tal_e(id)=-te(id)/(log(1-(vce(id)/e)));
+end
+tal_e
+
+tal_e =
+
+   25.1408   22.9237   22.3401   22.3681   24.4221
+
+sum(tal_e)/5
+
+ans =
+
+   23.4389
+
+for id=1:150
+vc=e*(1-exp(-t(id)/tal));
+end
+figure;hold on;xlabel('t(s)');ylabel()
+??? el('t(s)');ylabel()
+                      |
+Missing variable or function.
+
+figure;hold on;xlabel('t(s)');ylabel('Vc(V)');
+figure;hold on;xlabel('t(s)');ylabel('Vc(V)');axis([0 150 0 10]);
+plot(t,vc)
+vc
+
+vc =
+
+    9.9886
+
+for id=1:150
+vc(id)=e*(1-exp(-t(id)/tal));
+end
+figure;hold on;xlabel('t(s)');ylabel('Vc(V)');axis([0 150 0 10]);
+plot(t,vc)
+??? Error using ==> plot
+Vectors must be the same lengths.
+
+size(t)
+
+ans =
+
+     1   151
+
+size(vc)
+
+ans =
+
+     1   150
+
+t=1:150;
+for id=1:150
+vc(id)=e*(1-exp(-t(id)/tal));
+end
+figure;hold on;xlabel('t(s)');ylabel('Vc(V)');axis([0 150 0 10]);title('Fase de carga')
+plot(t,vc)
+plot(te,vce,'rd')
+legend('Curva teórica','Pontos experimentais')
+ie=[0.75 0.5 0.25 0.125 0.05];
+tempo_e=[6.04 14.83 30.07 45.51 65.28];
+for id=1:150
+corrente(id)=(e/r)*exp(-t(id)/tal);
+end
+figure;hold on;xlabel('t(s)');ylabel('I(mA)');axis([0 150 0 1]);title('Fase de descarga')
+corrente
+
+corrente =
+
+  1.0e-003 *
+
+  Columns 1 through 7 
+
+    0.9556    0.9131    0.8725    0.8338    0.7967    0.7613    0.7275
+
+  Columns 8 through 14 
+
+    0.6951    0.6643    0.6347    0.6065    0.5796    0.5538    0.5292
+
+  Columns 15 through 21 
+
+    0.5057    0.4832    0.4618    0.4412    0.4216    0.4029    0.3850
+
+  Columns 22 through 28 
+
+    0.3679    0.3515    0.3359    0.3210    0.3067    0.2931    0.2801
+
+  Columns 29 through 35 
+
+    0.2676    0.2557    0.2444    0.2335    0.2231    0.2132    0.2037
+
+  Columns 36 through 42 
+
+    0.1947    0.1860    0.1778    0.1699    0.1623    0.1551    0.1482
+
+  Columns 43 through 49 
+
+    0.1416    0.1353    0.1293    0.1236    0.1181    0.1128    0.1078
+
+  Columns 50 through 56 
+
+    0.1030    0.0985    0.0941    0.0899    0.0859    0.0821    0.0784
+
+  Columns 57 through 63 
+
+    0.0750    0.0716    0.0684    0.0654    0.0625    0.0597    0.0571
+
+  Columns 64 through 70 
+
+    0.0545    0.0521    0.0498    0.0476    0.0455    0.0434    0.0415
+
+  Columns 71 through 77 
+
+    0.0397    0.0379    0.0362    0.0346    0.0331    0.0316    0.0302
+
+  Columns 78 through 84 
+
+    0.0289    0.0276    0.0263    0.0252    0.0241    0.0230    0.0220
+
+  Columns 85 through 91 
+
+    0.0210    0.0201    0.0192    0.0183    0.0175    0.0167    0.0160
+
+  Columns 92 through 98 
+
+    0.0153    0.0146    0.0139    0.0133    0.0127    0.0122    0.0116
+
+  Columns 99 through 105 
+
+    0.0111    0.0106    0.0101    0.0097    0.0093    0.0089    0.0085
+
+  Columns 106 through 112 
+
+    0.0081    0.0077    0.0074    0.0071    0.0067    0.0064    0.0062
+
+  Columns 113 through 119 
+
+    0.0059    0.0056    0.0054    0.0051    0.0049    0.0047    0.0045
+
+  Columns 120 through 126 
+
+    0.0043    0.0041    0.0039    0.0037    0.0036    0.0034    0.0033
+
+  Columns 127 through 133 
+
+    0.0031    0.0030    0.0028    0.0027    0.0026    0.0025    0.0024
+
+  Columns 134 through 140 
+
+    0.0023    0.0022    0.0021    0.0020    0.0019    0.0018    0.0017
+
+  Columns 141 through 147 
+
+    0.0016    0.0016    0.0015    0.0014    0.0014    0.0013    0.0013
+
+  Columns 148 through 150 
+
+    0.0012    0.0011    0.0011
+
+plot(t,corrente)
+plot(t,corrente)
+figure;hold on;xlabel('t(s)');ylabel('I(mA)');axis([0 150 0 10^-3]);title('Fase de descarga')
+plot(t,corrente)
+plot(tempo_e,ie,'rd')
+ie
+
+ie =
+
+    0.7500    0.5000    0.2500    0.1250    0.0500
+
+ie=[0.75 0.5 0.25 0.125 0.05]*10^-3;
+plot(tempo_e,ie,'rd')
+ie=[0.75 0.5 0.25 0.125 0.05]*-10^-3;
+for id=1:150
+corrente(id)=(-e/r)*exp(-t(id)/tal);
+end
+figure;hold on;xlabel('t(s)');ylabel('I(mA)');axis([0 150 0 10^-3]);title('Fase de descarga')
+figure;hold on;xlabel('t(s)');ylabel('I(mA)');axis([0 150 0 -10^-3]);title('Fase de descarga')
+??? Error using ==> set
+Values must be increasing and non-NaN.
+
+Error in ==> C:\MATLABR11\toolbox\matlab\graph2d\axis.m
+On line 65  ==>         set(ax,'XLim',lims(1:2),'YLim',lims(3:4),...
+
+figure;hold on;xlabel('t(s)');ylabel('I(mA)');axis([0 150 0 10^-3]);title('Fase de descarga')
+figure;hold on;xlabel('t(s)');ylabel('I(mA)');axis([0 150 0 10^-3]);title('Fase de descarga')
+plot(t,corrente)
+plot(t,corrente)
+figure;hold on;xlabel('t(s)');ylabel('I(mA)');axis([0 150 -10^-3 0]);title('Fase de descarga')
+plot(t,corrente)
+plot(tempo_e,ie,'rd')
+legend('Curva teórica','Pontos experimentais')
+diary off
