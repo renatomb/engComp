@@ -1,0 +1,807 @@
+Project Information                       c:\renato\sources\maxplus\soma_8.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 03/27/2003 23:34:36
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+SOMA_8
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+soma_8    EPM7032LC44-6    17       9        0      30      8           93 %
+
+User Pins:                 17       9        0  
+
+
+
+Project Information                       c:\renato\sources\maxplus\soma_8.rpt
+
+** FILE HIERARCHY **
+
+
+
+|soma_1bit:sum0|
+|soma_1bit:sum0|porta_xor:xor1|
+|soma_1bit:sum0|porta_and:and1|
+|soma_1bit:sum0|porta_xor:xor2|
+|soma_1bit:sum0|porta_and:and2|
+|soma_1bit:sum0|porta_or:or1|
+|soma_1bit:sum1|
+|soma_1bit:sum1|porta_xor:xor1|
+|soma_1bit:sum1|porta_and:and1|
+|soma_1bit:sum1|porta_xor:xor2|
+|soma_1bit:sum1|porta_and:and2|
+|soma_1bit:sum1|porta_or:or1|
+|soma_1bit:sum2|
+|soma_1bit:sum2|porta_xor:xor1|
+|soma_1bit:sum2|porta_and:and1|
+|soma_1bit:sum2|porta_xor:xor2|
+|soma_1bit:sum2|porta_and:and2|
+|soma_1bit:sum2|porta_or:or1|
+|soma_1bit:sum3|
+|soma_1bit:sum3|porta_xor:xor1|
+|soma_1bit:sum3|porta_and:and1|
+|soma_1bit:sum3|porta_xor:xor2|
+|soma_1bit:sum3|porta_and:and2|
+|soma_1bit:sum3|porta_or:or1|
+|soma_1bit:sum4|
+|soma_1bit:sum4|porta_xor:xor1|
+|soma_1bit:sum4|porta_and:and1|
+|soma_1bit:sum4|porta_xor:xor2|
+|soma_1bit:sum4|porta_and:and2|
+|soma_1bit:sum4|porta_or:or1|
+|soma_1bit:sum5|
+|soma_1bit:sum5|porta_xor:xor1|
+|soma_1bit:sum5|porta_and:and1|
+|soma_1bit:sum5|porta_xor:xor2|
+|soma_1bit:sum5|porta_and:and2|
+|soma_1bit:sum5|porta_or:or1|
+|soma_1bit:sum6|
+|soma_1bit:sum6|porta_xor:xor1|
+|soma_1bit:sum6|porta_and:and1|
+|soma_1bit:sum6|porta_xor:xor2|
+|soma_1bit:sum6|porta_and:and2|
+|soma_1bit:sum6|porta_or:or1|
+|soma_1bit:sum7|
+|soma_1bit:sum7|porta_xor:xor1|
+|soma_1bit:sum7|porta_and:and1|
+|soma_1bit:sum7|porta_xor:xor2|
+|soma_1bit:sum7|porta_and:and2|
+|soma_1bit:sum7|porta_or:or1|
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+***** Logic for device 'soma_8' compiled without errors.
+
+
+
+
+Device: EPM7032LC44-6
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+** ERROR SUMMARY **
+
+Info: Chip 'soma_8' in device 'EPM7032LC44-6' has less than 10% of logic cells available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+                                               
+                                               
+                                               
+                 v                             
+                 a                             
+                 i     V  G  G  G  G  G        
+              s  u  s  C  N  N  N  N  N  a  a  
+              7  m  5  C  D  D  D  D  D  6  0  
+            -----------------------------------_ 
+          /   6  5  4  3  2  1 44 43 42 41 40   | 
+      s6 |  7                                39 | vemum 
+RESERVED |  8                                38 | b3 
+      b0 |  9                                37 | b2 
+     GND | 10                                36 | a1 
+      s0 | 11                                35 | VCC 
+      s1 | 12         EPM7032LC44-6          34 | a3 
+      a2 | 13                                33 | b7 
+      s2 | 14                                32 | b6 
+     VCC | 15                                31 | s4 
+      s3 | 16                                30 | GND 
+      b5 | 17                                29 | b1 
+         |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+           ------------------------------------ 
+              b  a  a  a  G  V  R  R  R  R  R  
+              4  4  5  7  N  C  E  E  E  E  E  
+                          D  C  S  S  S  S  S  
+                                E  E  E  E  E  
+                                R  R  R  R  R  
+                                V  V  V  V  V  
+                                E  E  E  E  E  
+                                D  D  D  D  D  
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16    14/16( 87%)  15/16( 93%)  14/16( 87%)  31/36( 86%) 
+B:    LC17 - LC32    16/16(100%)  11/16( 68%)  15/16( 93%)  16/36( 44%) 
+
+
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                            26/32     ( 81%)
+Total logic cells used:                         30/32     ( 93%)
+Total shareable expanders used:                  8/32     ( 25%)
+Total Turbo logic cells used:                   30/32     ( 93%)
+Total shareable expanders not available (n/a):  21/32     ( 65%)
+Average fan-in:                                  6.10
+Total fan-in:                                   183
+
+Total input pins required:                      17
+Total output pins required:                      9
+Total bidirectional pins required:               0
+Total logic cells required:                     30
+Total flipflops required:                        0
+Total product terms required:                  134
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           8
+
+Synthesized logic cells:                        21/  32   ( 65%)
+
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  40   (18)  (B)      INPUT               0      0   0    0    0    3   14  a0
+  36   (22)  (B)      INPUT               0      0   0    0    0    2   15  a1
+  13    (9)  (A)      INPUT               0      0   0    0    0    1   14  a2
+  34   (23)  (B)      INPUT               0      0   0    0    0    1   11  a3
+  19   (14)  (A)      INPUT               0      0   0    0    0    1    3  a4
+  20   (15)  (A)      INPUT               0      0   0    0    0    1    1  a5
+  41   (17)  (B)      INPUT               0      0   0    0    0    2    1  a6
+  21   (16)  (A)      INPUT               0      0   0    0    0    2    0  a7
+   9    (6)  (A)      INPUT               0      0   0    0    0    2   14  b0
+  29   (27)  (B)      INPUT               0      0   0    0    0    2   15  b1
+  37   (21)  (B)      INPUT               0      0   0    0    0    1   12  b2
+  38   (20)  (B)      INPUT               0      0   0    0    0    1   10  b3
+  18   (13)  (A)      INPUT               0      0   0    0    0    1    3  b4
+  17   (12)  (A)      INPUT               0      0   0    0    0    1    1  b5
+  32   (25)  (B)      INPUT               0      0   0    0    0    2    1  b6
+  33   (24)  (B)      INPUT               0      0   0    0    0    2    0  b7
+  39   (19)  (B)      INPUT               0      0   0    0    0    3   14  vemum
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  11      7    A     OUTPUT      t        0      0   0    3    0    0    0  s0
+  12      8    A     OUTPUT      t        3      0   1    5    0    0    0  s1
+  14     10    A     OUTPUT      t        4      0   0    6    1    0    0  s2
+  16     11    A     OUTPUT      t        0      0   0    0    4    0    0  s3
+  31     26    B     OUTPUT      t        1      0   0    2    7    0    0  s4
+   4      1    A     OUTPUT      t        1      0   1    4    1    0    0  s5
+   7      4    A     OUTPUT      t        0      0   0    0    2    0    0  s6
+   6      3    A     OUTPUT      t        2      0   1    4    2    0    0  s7
+   5      2    A     OUTPUT      t        1      0   1    4    2    0    0  vaium
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (18)    13    A       SOFT    s t        1      0   1    5    0    1    0  |soma_1bit:sum2|porta_xor:xor2|~4~1
+ (33)    24    B       SOFT    s t        1      0   1    6    0    1    0  |soma_1bit:sum3|porta_xor:xor2|~4~1
+ (32)    25    B       SOFT    s t        1      0   1    7    0    1    0  |soma_1bit:sum3|porta_xor:xor2|~4~2
+ (29)    27    B       SOFT    s t        1      0   1    7    0    1    0  |soma_1bit:sum3|porta_xor:xor2|~4~3
+ (28)    28    B       SOFT    s t        0      0   0    2    0    1    0  |soma_1bit:sum3|porta_xor:xor2|~4~4
+ (19)    14    A       SOFT    s t        1      0   1    7    6    1    1  |soma_1bit:sum4|porta_and:and2|~4~1
+ (37)    21    B       SOFT    s t        1      0   1    8    0    0    1  |soma_1bit:sum4|porta_and:and2|~4~2
+ (27)    29    B       SOFT    s t        1      0   1    9    0    0    1  |soma_1bit:sum4|porta_and:and2|~4~3
+ (36)    22    B       SOFT    s t        1      0   1    8    0    0    1  |soma_1bit:sum4|porta_and:and2|~4~4
+ (34)    23    B       SOFT    s t        1      0   1    7    0    0    1  |soma_1bit:sum4|porta_and:and2|~4~5
+ (24)    32    B       SOFT    s t        1      0   1    6    0    0    1  |soma_1bit:sum4|porta_and:and2|~4~6
+ (17)    12    A       SOFT    s t        0      0   0    6    0    0    1  |soma_1bit:sum4|porta_and:and2|~4~7
+ (25)    31    B       SOFT    s t        1      0   1    7    0    1    0  |soma_1bit:sum4|porta_xor:xor2|~4~1
+ (26)    30    B       SOFT    s t        1      0   1    8    0    1    0  |soma_1bit:sum4|porta_xor:xor2|~4~2
+ (39)    19    B       SOFT    s t        1      0   1    7    0    1    0  |soma_1bit:sum4|porta_xor:xor2|~4~3
+ (40)    18    B       SOFT    s t        1      0   1    7    0    1    0  |soma_1bit:sum4|porta_xor:xor2|~4~4
+ (41)    17    B       SOFT    s t        1      0   1    8    0    1    0  |soma_1bit:sum4|porta_xor:xor2|~4~5
+ (38)    20    B       SOFT    s t        1      0   1    6    0    1    0  |soma_1bit:sum4|porta_xor:xor2|~4~6
+  (8)     5    A       SOFT    s t        0      0   0    2    0    1    0  |soma_1bit:sum4|porta_xor:xor2|~4~7
+  (9)     6    A       SOFT    s t        1      0   1    4    1    3    0  |soma_1bit:sum5|porta_or:or1|~4~1
+ (13)     9    A       SOFT    s t        0      0   0    2    0    3    0  |soma_1bit:sum6|porta_xor:xor1|~4~1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                                     Logic cells placed in LAB 'A'
+        +--------------------------- LC13 |soma_1bit:sum2|porta_xor:xor2|~4~1
+        | +------------------------- LC14 |soma_1bit:sum4|porta_and:and2|~4~1
+        | | +----------------------- LC12 |soma_1bit:sum4|porta_and:and2|~4~7
+        | | | +--------------------- LC5 |soma_1bit:sum4|porta_xor:xor2|~4~7
+        | | | | +------------------- LC6 |soma_1bit:sum5|porta_or:or1|~4~1
+        | | | | | +----------------- LC9 |soma_1bit:sum6|porta_xor:xor1|~4~1
+        | | | | | | +--------------- LC7 s0
+        | | | | | | | +------------- LC8 s1
+        | | | | | | | | +----------- LC10 s2
+        | | | | | | | | | +--------- LC11 s3
+        | | | | | | | | | | +------- LC1 s5
+        | | | | | | | | | | | +----- LC4 s6
+        | | | | | | | | | | | | +--- LC3 s7
+        | | | | | | | | | | | | | +- LC2 vaium
+        | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | |   that feed LAB 'A'
+LC      | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'A':
+LC13 -> - - - - - - - - * - - - - - | * - | <-- |soma_1bit:sum2|porta_xor:xor2|~4~1
+LC14 -> - - - - * - - - - - * - - - | * - | <-- |soma_1bit:sum4|porta_and:and2|~4~1
+LC12 -> - * - - - - - - - - - - - - | * - | <-- |soma_1bit:sum4|porta_and:and2|~4~7
+LC6  -> - - - - - - - - - - - * * * | * - | <-- |soma_1bit:sum5|porta_or:or1|~4~1
+LC9  -> - - - - - - - - - - - * * * | * - | <-- |soma_1bit:sum6|porta_xor:xor1|~4~1
+
+Pin
+40   -> * * - - - - * * * - - - - - | * * | <-- a0
+36   -> * * - - - - - * * - - - - - | * * | <-- a1
+13   -> - * * - - - - - * - - - - - | * * | <-- a2
+34   -> - * * - - - - - - - - - - - | * * | <-- a3
+19   -> - - * * * - - - - - * - - - | * - | <-- a4
+20   -> - - - - * - - - - - * - - - | * - | <-- a5
+41   -> - - - - - * - - - - - - * * | * - | <-- a6
+21   -> - - - - - - - - - - - - * * | * - | <-- a7
+9    -> * * - - - - * * - - - - - - | * * | <-- b0
+29   -> * * - - - - - * * - - - - - | * * | <-- b1
+37   -> - - * - - - - - * - - - - - | * * | <-- b2
+38   -> - - * - - - - - - - - - - - | * * | <-- b3
+18   -> - - * * * - - - - - * - - - | * - | <-- b4
+17   -> - - - - * - - - - - * - - - | * - | <-- b5
+32   -> - - - - - * - - - - - - * * | * - | <-- b6
+33   -> - - - - - - - - - - - - * * | * - | <-- b7
+39   -> * * - - - - * * * - - - - - | * * | <-- vemum
+LC24 -> - - - - - - - - - * - - - - | * - | <-- |soma_1bit:sum3|porta_xor:xor2|~4~1
+LC25 -> - - - - - - - - - * - - - - | * - | <-- |soma_1bit:sum3|porta_xor:xor2|~4~2
+LC27 -> - - - - - - - - - * - - - - | * - | <-- |soma_1bit:sum3|porta_xor:xor2|~4~3
+LC28 -> - - - - - - - - - * - - - - | * - | <-- |soma_1bit:sum3|porta_xor:xor2|~4~4
+LC21 -> - * - - - - - - - - - - - - | * - | <-- |soma_1bit:sum4|porta_and:and2|~4~2
+LC29 -> - * - - - - - - - - - - - - | * - | <-- |soma_1bit:sum4|porta_and:and2|~4~3
+LC22 -> - * - - - - - - - - - - - - | * - | <-- |soma_1bit:sum4|porta_and:and2|~4~4
+LC23 -> - * - - - - - - - - - - - - | * - | <-- |soma_1bit:sum4|porta_and:and2|~4~5
+LC32 -> - * - - - - - - - - - - - - | * - | <-- |soma_1bit:sum4|porta_and:and2|~4~6
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC24 |soma_1bit:sum3|porta_xor:xor2|~4~1
+        | +----------------------------- LC25 |soma_1bit:sum3|porta_xor:xor2|~4~2
+        | | +--------------------------- LC27 |soma_1bit:sum3|porta_xor:xor2|~4~3
+        | | | +------------------------- LC28 |soma_1bit:sum3|porta_xor:xor2|~4~4
+        | | | | +----------------------- LC21 |soma_1bit:sum4|porta_and:and2|~4~2
+        | | | | | +--------------------- LC29 |soma_1bit:sum4|porta_and:and2|~4~3
+        | | | | | | +------------------- LC22 |soma_1bit:sum4|porta_and:and2|~4~4
+        | | | | | | | +----------------- LC23 |soma_1bit:sum4|porta_and:and2|~4~5
+        | | | | | | | | +--------------- LC32 |soma_1bit:sum4|porta_and:and2|~4~6
+        | | | | | | | | | +------------- LC31 |soma_1bit:sum4|porta_xor:xor2|~4~1
+        | | | | | | | | | | +----------- LC30 |soma_1bit:sum4|porta_xor:xor2|~4~2
+        | | | | | | | | | | | +--------- LC19 |soma_1bit:sum4|porta_xor:xor2|~4~3
+        | | | | | | | | | | | | +------- LC18 |soma_1bit:sum4|porta_xor:xor2|~4~4
+        | | | | | | | | | | | | | +----- LC17 |soma_1bit:sum4|porta_xor:xor2|~4~5
+        | | | | | | | | | | | | | | +--- LC20 |soma_1bit:sum4|porta_xor:xor2|~4~6
+        | | | | | | | | | | | | | | | +- LC26 s4
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC31 -> - - - - - - - - - - - - - - - * | - * | <-- |soma_1bit:sum4|porta_xor:xor2|~4~1
+LC30 -> - - - - - - - - - - - - - - - * | - * | <-- |soma_1bit:sum4|porta_xor:xor2|~4~2
+LC19 -> - - - - - - - - - - - - - - - * | - * | <-- |soma_1bit:sum4|porta_xor:xor2|~4~3
+LC18 -> - - - - - - - - - - - - - - - * | - * | <-- |soma_1bit:sum4|porta_xor:xor2|~4~4
+LC17 -> - - - - - - - - - - - - - - - * | - * | <-- |soma_1bit:sum4|porta_xor:xor2|~4~5
+LC20 -> - - - - - - - - - - - - - - - * | - * | <-- |soma_1bit:sum4|porta_xor:xor2|~4~6
+
+Pin
+40   -> * * * - * * * * - * * * * * - - | * * | <-- a0
+36   -> * * * - * * * * * * * * - * * - | * * | <-- a1
+13   -> * * * - * * * - * * * - * * * - | * * | <-- a2
+34   -> - - - * * * - - * * * * - * * * | * * | <-- a3
+9    -> * * * - * * * * - * * * * * - - | * * | <-- b0
+29   -> * * * - * * * * * * * - * * * - | * * | <-- b1
+37   -> - * * - * * * * * - * * * - * - | * * | <-- b2
+38   -> - - - * - * * * * - - * * * * * | * * | <-- b3
+39   -> * * * - * * * * - * * * * * - - | * * | <-- vemum
+LC5  -> - - - - - - - - - - - - - - - * | - * | <-- |soma_1bit:sum4|porta_xor:xor2|~4~7
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:              c:\renato\sources\maxplus\soma_8.rpt
+soma_8
+
+** EQUATIONS **
+
+a0       : INPUT;
+a1       : INPUT;
+a2       : INPUT;
+a3       : INPUT;
+a4       : INPUT;
+a5       : INPUT;
+a6       : INPUT;
+a7       : INPUT;
+b0       : INPUT;
+b1       : INPUT;
+b2       : INPUT;
+b3       : INPUT;
+b4       : INPUT;
+b5       : INPUT;
+b6       : INPUT;
+b7       : INPUT;
+vemum    : INPUT;
+
+-- Node name is 's0' 
+-- Equation name is 's0', location is LC007, type is output.
+ s0      = LCELL( _EQ001 $  vemum);
+  _EQ001 =  a0 & !b0
+         # !a0 &  b0;
+
+-- Node name is 's1' 
+-- Equation name is 's1', location is LC008, type is output.
+ s1      = LCELL( _EQ002 $  a1);
+  _EQ002 =  a0 & !b1 &  vemum
+         #  b0 & !b1 &  _X001
+         # !a0 &  b1 &  _X002
+         # !b0 &  b1 & !vemum;
+  _X001  = EXP(!a0 & !vemum);
+  _X002  = EXP( b0 &  vemum);
+
+-- Node name is 's2' 
+-- Equation name is 's2', location is LC010, type is output.
+ s2      = LCELL( _EQ003 $  _EQ004);
+  _EQ003 =  _X003 &  _X004;
+  _X003  = EXP(!a2 &  b2);
+  _X004  = EXP( a2 & !b2);
+  _EQ004 = !_LC013 &  _X005 &  _X006;
+  _X005  = EXP( a0 &  b1 &  vemum);
+  _X006  = EXP( a1 &  b1);
+
+-- Node name is 's3' 
+-- Equation name is 's3', location is LC011, type is output.
+ s3      = LCELL(!_LC028 $  _EQ005);
+  _EQ005 = !_LC024 & !_LC025 & !_LC027;
+
+-- Node name is 's4' 
+-- Equation name is 's4', location is LC026, type is output.
+ s4      = LCELL(!_LC005 $  _EQ006);
+  _EQ006 = !_LC017 & !_LC018 & !_LC019 & !_LC020 & !_LC030 & !_LC031 &  _X007;
+  _X007  = EXP( a3 &  b3);
+
+-- Node name is 's5' 
+-- Equation name is 's5', location is LC001, type is output.
+ s5      = LCELL( _EQ007 $  a5);
+  _EQ007 =  a4 &  b4 & !b5
+         # !a4 &  b5 & !_LC014
+         # !b4 &  b5 & !_LC014
+         # !b5 &  _LC014;
+
+-- Node name is 's6' 
+-- Equation name is 's6', location is LC004, type is output.
+ s6      = LCELL( _LC009 $  _LC006);
+
+-- Node name is 's7' 
+-- Equation name is 's7', location is LC003, type is output.
+ s7      = LCELL( _EQ008 $  a7);
+  _EQ008 =  a6 &  b6 & !b7
+         # !b7 &  _LC006 &  _LC009
+         # !a6 &  b7 &  _X008
+         # !b6 &  b7 &  _X008;
+  _X008  = EXP( _LC006 &  _LC009);
+
+-- Node name is 'vaium' 
+-- Equation name is 'vaium', location is LC002, type is output.
+ vaium   = LCELL( _EQ009 $  GND);
+  _EQ009 =  a7 & !b7 &  _LC006 &  _LC009
+         #  a6 &  a7 &  b6 & !b7
+         # !a7 &  b7 &  _LC006 &  _LC009
+         #  a6 & !a7 &  b6 &  b7
+         #  a7 &  b7;
+
+-- Node name is '|soma_1bit:sum2|porta_xor:xor2|~4~1' 
+-- Equation name is '_LC013', type is buried 
+-- synthesized logic cell 
+_LC013   = LCELL( _EQ010 $  GND);
+  _EQ010 =  a0 &  a1 &  vemum
+         #  a1 &  b0 &  vemum
+         #  a0 &  a1 &  b0
+         #  a0 &  b0 &  b1
+         #  b0 &  b1 &  vemum;
+
+-- Node name is '|soma_1bit:sum3|porta_xor:xor2|~4~1' 
+-- Equation name is '_LC024', type is buried 
+-- synthesized logic cell 
+_LC024   = LCELL( _EQ011 $  GND);
+  _EQ011 =  a0 &  a1 &  a2 &  vemum
+         #  a1 &  a2 &  b0 &  vemum
+         #  a0 &  a1 &  a2 &  b0
+         #  a0 &  a2 &  b0 &  b1
+         #  a2 &  b0 &  b1 &  vemum;
+
+-- Node name is '|soma_1bit:sum3|porta_xor:xor2|~4~2' 
+-- Equation name is '_LC025', type is buried 
+-- synthesized logic cell 
+_LC025   = LCELL( _EQ012 $  GND);
+  _EQ012 =  a0 &  a2 &  b1 &  vemum
+         #  a0 &  b1 &  b2 &  vemum
+         #  b0 &  b1 &  b2 &  vemum
+         #  a0 &  b0 &  b1 &  b2
+         #  a0 &  a1 &  b0 &  b2;
+
+-- Node name is '|soma_1bit:sum3|porta_xor:xor2|~4~3' 
+-- Equation name is '_LC027', type is buried 
+-- synthesized logic cell 
+_LC027   = LCELL( _EQ013 $  GND);
+  _EQ013 =  a1 &  b0 &  b2 &  vemum
+         #  a0 &  a1 &  b2 &  vemum
+         #  a1 &  a2 &  b1
+         #  a1 &  b1 &  b2
+         #  a2 &  b2;
+
+-- Node name is '|soma_1bit:sum3|porta_xor:xor2|~4~4' 
+-- Equation name is '_LC028', type is buried 
+-- synthesized logic cell 
+_LC028   = LCELL( _EQ014 $  GND);
+  _EQ014 =  a3 & !b3
+         # !a3 &  b3;
+
+-- Node name is '|soma_1bit:sum4|porta_and:and2|~4~1' 
+-- Equation name is '_LC014', type is buried 
+-- synthesized logic cell 
+_LC014   = LCELL( _EQ015 $  _EQ016);
+  _EQ015 = !a0 & !a1 & !a2 & !a3 & !b0 & !_LC012 & !_LC021 & !_LC022 & 
+             !_LC023 & !_LC029 & !_LC032
+         # !a0 & !a1 & !a2 & !a3 & !_LC012 & !_LC021 & !_LC022 & !_LC023 & 
+             !_LC029 & !_LC032 & !vemum
+         # !a1 & !a2 & !a3 & !b0 & !_LC012 & !_LC021 & !_LC022 & !_LC023 & 
+             !_LC029 & !_LC032 & !vemum
+         # !a0 & !a2 & !a3 & !b0 & !b1 & !_LC012 & !_LC021 & !_LC022 & 
+             !_LC023 & !_LC029 & !_LC032;
+  _EQ016 = !_LC012 & !_LC021 & !_LC022 & !_LC023 & !_LC029 & !_LC032;
+
+-- Node name is '|soma_1bit:sum4|porta_and:and2|~4~2' 
+-- Equation name is '_LC021', type is buried 
+-- synthesized logic cell 
+_LC021   = LCELL( _EQ017 $  GND);
+  _EQ017 = !a0 & !a2 & !a3 & !b1 & !vemum
+         # !a2 & !a3 & !b0 & !b1 & !vemum
+         # !a0 & !a1 & !a3 & !b0 & !b2
+         # !a0 & !a1 & !a3 & !b2 & !vemum
+         # !a1 & !a3 & !b0 & !b2 & !vemum;
+
+-- Node name is '|soma_1bit:sum4|porta_and:and2|~4~3' 
+-- Equation name is '_LC029', type is buried 
+-- synthesized logic cell 
+_LC029   = LCELL( _EQ018 $  GND);
+  _EQ018 = !a0 & !a3 & !b0 & !b1 & !b2
+         # !a0 & !a3 & !b1 & !b2 & !vemum
+         # !a3 & !b0 & !b1 & !b2 & !vemum
+         # !a0 & !a1 & !a2 & !b0 & !b3
+         # !a0 & !a1 & !a2 & !b3 & !vemum;
+
+-- Node name is '|soma_1bit:sum4|porta_and:and2|~4~4' 
+-- Equation name is '_LC022', type is buried 
+-- synthesized logic cell 
+_LC022   = LCELL( _EQ019 $  GND);
+  _EQ019 = !a1 & !a2 & !b0 & !b3 & !vemum
+         # !a0 & !a2 & !b0 & !b1 & !b3
+         # !a0 & !a2 & !b1 & !b3 & !vemum
+         # !a2 & !b0 & !b1 & !b3 & !vemum
+         # !a0 & !a1 & !b0 & !b2 & !b3;
+
+-- Node name is '|soma_1bit:sum4|porta_and:and2|~4~5' 
+-- Equation name is '_LC023', type is buried 
+-- synthesized logic cell 
+_LC023   = LCELL( _EQ020 $  GND);
+  _EQ020 = !a0 & !a1 & !b2 & !b3 & !vemum
+         # !a1 & !b0 & !b2 & !b3 & !vemum
+         # !a0 & !b0 & !b1 & !b2 & !b3
+         # !a0 & !b1 & !b2 & !b3 & !vemum
+         # !b0 & !b1 & !b2 & !b3 & !vemum;
+
+-- Node name is '|soma_1bit:sum4|porta_and:and2|~4~6' 
+-- Equation name is '_LC032', type is buried 
+-- synthesized logic cell 
+_LC032   = LCELL( _EQ021 $  GND);
+  _EQ021 = !a1 & !a2 & !a3 & !b1
+         # !a1 & !a3 & !b1 & !b2
+         # !a1 & !a2 & !b1 & !b3
+         # !a1 & !b1 & !b2 & !b3
+         # !a2 & !a3 & !b2;
+
+-- Node name is '|soma_1bit:sum4|porta_and:and2|~4~7' 
+-- Equation name is '_LC012', type is buried 
+-- synthesized logic cell 
+_LC012   = LCELL( _EQ022 $  GND);
+  _EQ022 = !a2 & !b2 & !b3
+         #  a4 &  b4
+         # !a4 & !b4
+         # !a3 & !b3;
+
+-- Node name is '|soma_1bit:sum4|porta_xor:xor2|~4~1' 
+-- Equation name is '_LC031', type is buried 
+-- synthesized logic cell 
+_LC031   = LCELL( _EQ023 $  GND);
+  _EQ023 =  a0 &  a1 &  a2 &  a3 &  vemum
+         #  a1 &  a2 &  a3 &  b0 &  vemum
+         #  a0 &  a1 &  a2 &  a3 &  b0
+         #  a0 &  a2 &  a3 &  b0 &  b1
+         #  a2 &  a3 &  b0 &  b1 &  vemum;
+
+-- Node name is '|soma_1bit:sum4|porta_xor:xor2|~4~2' 
+-- Equation name is '_LC030', type is buried 
+-- synthesized logic cell 
+_LC030   = LCELL( _EQ024 $  GND);
+  _EQ024 =  a0 &  a2 &  a3 &  b1 &  vemum
+         #  a0 &  a3 &  b1 &  b2 &  vemum
+         #  a3 &  b0 &  b1 &  b2 &  vemum
+         #  a0 &  a3 &  b0 &  b1 &  b2
+         #  a0 &  a1 &  a3 &  b0 &  b2;
+
+-- Node name is '|soma_1bit:sum4|porta_xor:xor2|~4~3' 
+-- Equation name is '_LC019', type is buried 
+-- synthesized logic cell 
+_LC019   = LCELL( _EQ025 $  GND);
+  _EQ025 =  a1 &  a3 &  b0 &  b2 &  vemum
+         #  a0 &  a1 &  a3 &  b2 &  vemum
+         #  a0 &  a1 &  b2 &  b3 &  vemum
+         #  a1 &  b0 &  b2 &  b3 &  vemum
+         #  a0 &  a1 &  b0 &  b2 &  b3;
+
+-- Node name is '|soma_1bit:sum4|porta_xor:xor2|~4~4' 
+-- Equation name is '_LC018', type is buried 
+-- synthesized logic cell 
+_LC018   = LCELL( _EQ026 $  GND);
+  _EQ026 =  a0 &  b0 &  b1 &  b2 &  b3
+         #  b0 &  b1 &  b2 &  b3 &  vemum
+         #  a0 &  b1 &  b2 &  b3 &  vemum
+         #  a0 &  a2 &  b1 &  b3 &  vemum
+         #  a2 &  b0 &  b1 &  b3 &  vemum;
+
+-- Node name is '|soma_1bit:sum4|porta_xor:xor2|~4~5' 
+-- Equation name is '_LC017', type is buried 
+-- synthesized logic cell 
+_LC017   = LCELL( _EQ027 $  GND);
+  _EQ027 =  a0 &  a2 &  b0 &  b1 &  b3
+         #  a0 &  a1 &  a2 &  b0 &  b3
+         #  a1 &  a2 &  b0 &  b3 &  vemum
+         #  a0 &  a1 &  a2 &  b3 &  vemum
+         #  a1 &  a2 &  a3 &  b1;
+
+-- Node name is '|soma_1bit:sum4|porta_xor:xor2|~4~6' 
+-- Equation name is '_LC020', type is buried 
+-- synthesized logic cell 
+_LC020   = LCELL( _EQ028 $  GND);
+  _EQ028 =  a1 &  a3 &  b1 &  b2
+         #  a1 &  b1 &  b2 &  b3
+         #  a1 &  a2 &  b1 &  b3
+         #  a2 &  a3 &  b2
+         #  a2 &  b2 &  b3;
+
+-- Node name is '|soma_1bit:sum4|porta_xor:xor2|~4~7' 
+-- Equation name is '_LC005', type is buried 
+-- synthesized logic cell 
+_LC005   = LCELL( _EQ029 $  GND);
+  _EQ029 =  a4 & !b4
+         # !a4 &  b4;
+
+-- Node name is '|soma_1bit:sum5|porta_or:or1|~4~1' 
+-- Equation name is '_LC006', type is buried 
+-- synthesized logic cell 
+_LC006   = LCELL( _EQ030 $  a5);
+  _EQ030 =  a4 & !a5 &  b4 &  b5
+         # !a4 &  a5 & !b5 & !_LC014
+         #  a5 & !b4 & !b5 & !_LC014
+         # !a5 &  b5 &  _LC014;
+
+-- Node name is '|soma_1bit:sum6|porta_xor:xor1|~4~1' 
+-- Equation name is '_LC009', type is buried 
+-- synthesized logic cell 
+_LC009   = LCELL( b6 $  a6);
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                       c:\renato\sources\maxplus\soma_8.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:07
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:03
+   Partitioner                            00:00:07
+   Fitter                                 00:00:02
+   Timing SNF Extractor                   00:00:01
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:20
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 3,374K

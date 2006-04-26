@@ -1,0 +1,74 @@
+NDB006
+The number of symbol table entries is: 23
+The length of the symbol table is: 563
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|porta_or3:ouzzao|
+A	|box1:caixa1|
+O	|box1:caixa1|porta_and:eee1|
+l	|box1:caixa1|porta_and:eee2|
+"+	|box1:caixa1|porta_or:ouu1|
+"G	|box1:caixa2|
+"U	|box1:caixa2|porta_and:eee1|
+"r	|box1:caixa2|porta_and:eee2|
+#1	|box1:caixa2|porta_or:ouu1|
+#M	|box1:caixa3|
+#[	|box1:caixa3|porta_and:eee1|
+#x	|box1:caixa3|porta_and:eee2|
+$7	|box1:caixa3|porta_or:ouu1|
+$S	|box1:caixa4|
+$a	|box1:caixa4|porta_and:eee1|
+$~	|box1:caixa4|porta_and:eee2|
+%=	|box1:caixa4|porta_or:ouu1|
+%Y	|box2:caixa5|
+%g	|box2:caixa5|porta_and:eee1|
+&&	|box2:caixa5|porta_and:eee2|
+&C	|box2:caixa5|porta_and3:eee3|
+&a	|box2:caixa5|porta_or3:oou1|
+
+The number of name info structs is : 40
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IeEA	!	153	1	:18	"@
+#	L8ef	!	150	17	3	,	-	.	w0	u
+$	L8ef	!	150	17	2	-	.	w1	v
+%	L8ef	!	150	17	1	.	w2	w
+&	L8ef	!	150	17	3	,	-	.	x0	o
+'	L8ef	!	150	17	3	,	-	.	x1	p
+(	L8ef	!	150	17	3	,	-	.	x2	q
+)	L8ef	!	150	17	3	,	-	.	y0	r
+*	L8ef	!	150	17	2	-	.	y1	s
++	L8ef	!	150	17	1	.	y2	t
+,	IeE[	!	151	17	z0	x
+-	Snh-	!	151	17	1	1	z1	y
+.	XsJE	!	151	17	2	1	1	z2	z
+/	IeEA	A	84	9	:8	"f
+0	IeEA	O	11	9	:4	"o
+1	IeEA	l	11	9	:4	"x
+2	IeEA	"+	35	9	:4	#"
+3	IeEA	"G	84	9	:8	#;
+4	IeEA	"U	11	9	:4	#C
+5	IeEA	"r	11	9	:4	#K
+6	IeEA	#1	35	9	:4	#S
+7	IeEA	#M	84	9	:8	#k
+8	IeEA	#[	11	9	:4	#s
+9	IeEA	#x	11	9	:4	#{
+:	IeEA	$7	35	9	:4	$%
+;	IeEA	$S	84	9	:8	$=
+<	IeEA	$a	11	9	:4	$E
+=	IeEA	$~	11	9	:4	$M
+>	IeEA	%=	35	9	:4	$U
+?	IeEA	%Y	124	9	:11	$v
+@	IeEA	%Y	125	9	:12	$w
+A	IeEA	%Y	126	9	:13	$x
+B	IeEA	&C	23	9	:6	%5
+C	IeEA	&C	23	9	:7	%6
+D	IeEA	%g	11	9	:4	%#
+E	IeEA	&&	11	9	:4	%+
+F	IeEA	&a	47	9	:6	%A
+G	IeEA	&a	47	9	:7	%B
+H	IeEA	.	47	9	:6	"L
+I	IeEA	.	47	9	:7	"M

@@ -1,0 +1,240 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "cpu" ASSIGNED TO AN EPF10K30RC208-3
+TCK                              : 1
+CONF_DONE                        : 2
+nCEO                             : 3
+TDO                              : 4
+VCCIO                            : 5
+VCCINT                           : 6
+IN_MEM12                         : 7
+OUT_MEM11                        : 8
+OUT_MEM14                        : 9
+OUT_MEM7                         : 10
+OUT_MEM12                        : 11
+RESERVED                         : 12
+RESERVED                         : 13
+RESERVED                         : 14
+RD                               : 15
+RESERVED                         : 16
+RESERVED                         : 17
+RESERVED                         : 18
+RESERVED                         : 19
+GNDIO                            : 20
+GNDINT                           : 21
+VCCIO                            : 22
+VCCINT                           : 23
+ADD_MEM0                         : 24
+IN_MEM7                          : 25
+ADD_MEM9                         : 26
+OUT_MEM2                         : 27
+ADD_MEM2                         : 28
+ADD_MEM10                        : 29
+ADD_MEM6                         : 30
+IN_MEM6                          : 31
+GNDIO                            : 32
+GNDINT                           : 33
+VCCIO                            : 34
+VCCINT                           : 35
+RESERVED                         : 36
+IN_MEM11                         : 37
+RESERVED                         : 38
+IN_MEM10                         : 39
+OUT_MEM9                         : 40
+RESERVED                         : 41
+VCCIO                            : 42
+VCCINT                           : 43
+RESERVED                         : 44
+RESERVED                         : 45
+RESERVED                         : 46
+RESERVED                         : 47
+GNDIO                            : 48
+GNDINT                           : 49
+TMS                              : 50
+TRST                             : 51
+nSTATUS                          : 52
+RESERVED                         : 53
+RESERVED                         : 54
+RESERVED                         : 55
+RESERVED                         : 56
+RESERVED                         : 57
+RESERVED                         : 58
+GNDIO                            : 59
+RESERVED                         : 60
+RESERVED                         : 61
+RESERVED                         : 62
+RESERVED                         : 63
+OUT_MEM8                         : 64
+OUT_MEM15                        : 65
+VCCIO                            : 66
+OUT_MEM13                        : 67
+RESERVED                         : 68
+RESERVED                         : 69
+RESERVED                         : 70
+ADD_MEM5                         : 71
+GNDIO                            : 72
+OUT_MEM3                         : 73
+RESERVED                         : 74
+RESERVED                         : 75
+VCCINT                           : 76
+VCCINT                           : 77
+IN_MEM1                          : 78
+CLK                              : 79
+IN_MEM2                          : 80
+GNDINT                           : 81
+GNDINT                           : 82
+RESERVED                         : 83
+VCCIO                            : 84
+RESERVED                         : 85
+RESERVED                         : 86
+RESERVED                         : 87
+RESERVED                         : 88
+RESERVED                         : 89
+RESERVED                         : 90
+GNDIO                            : 91
+RESERVED                         : 92
+RESERVED                         : 93
+RESERVED                         : 94
+RESERVED                         : 95
+RESERVED                         : 96
+RESERVED                         : 97
+VCCIO                            : 98
+RESERVED                         : 99
+RESERVED                         : 100
+RESERVED                         : 101
+RESERVED                         : 102
+RESERVED                         : 103
+RESERVED                         : 104
+nCONFIG                          : 105
+VCCINT                           : 106
+MSEL1                            : 107
+MSEL0                            : 108
+VCCINT                           : 109
+VCCIO                            : 110
+RESERVED                         : 111
+RESERVED                         : 112
+RESERVED                         : 113
+RESERVED                         : 114
+RESERVED                         : 115
+RESERVED                         : 116
+VCCINT                           : 117
+VCCIO                            : 118
+IN_MEM9                          : 119
+RESERVED                         : 120
+OUT_MEM10                        : 121
+RESERVED                         : 122
+GNDINT                           : 123
+GNDIO                            : 124
+ADD_MEM11                        : 125
+OUT_MEM6                         : 126
+ADD_MEM8                         : 127
+IN_MEM14                         : 128
+GNDINT                           : 129
+GNDIO                            : 130
+ADD_MEM7                         : 131
+RESERVED                         : 132
+ADD_MEM1                         : 133
+ADD_MEM3                         : 134
+ADD_MEM4                         : 135
+RESERVED                         : 136
+VCCINT                           : 137
+VCCIO                            : 138
+IN_MEM13                         : 139
+RESERVED                         : 140
+RESERVED                         : 141
+IN_MEM0                          : 142
+RESERVED                         : 143
+RESERVED                         : 144
+VCCINT                           : 145
+VCCIO                            : 146
+IN_MEM15                         : 147
+OUT_MEM0                         : 148
+IN_MEM8                          : 149
+OUT_MEM1                         : 150
+GNDINT                           : 151
+GNDIO                            : 152
+TDI                              : 153
+nCE                              : 154
+DCLK                             : 155
+DATA0                            : 156
+RESERVED                         : 157
+RESERVED                         : 158
+RESERVED                         : 159
+RESERVED                         : 160
+RESERVED                         : 161
+RESERVED                         : 162
+RESERVED                         : 163
+RESERVED                         : 164
+VCCIO                            : 165
+RESERVED                         : 166
+RESERVED                         : 167
+RESERVED                         : 168
+RESERVED                         : 169
+RESERVED                         : 170
+GNDIO                            : 171
+RESERVED                         : 172
+RESERVED                         : 173
+RESERVED                         : 174
+WR                               : 175
+RESERVED                         : 176
+RESERVED                         : 177
+VCCIO                            : 178
+RESERVED                         : 179
+RESERVED                         : 180
+VCCINT                           : 181
+IN_MEM3                          : 182
+IN_MEM5                          : 183
+IN_MEM4                          : 184
+GNDINT                           : 185
+RESERVED                         : 186
+RESERVED                         : 187
+GNDIO                            : 188
+RESERVED                         : 189
+RESERVED                         : 190
+RESERVED                         : 191
+RESERVED                         : 192
+OUT_MEM5                         : 193
+VCCIO                            : 194
+OUT_MEM4                         : 195
+RESERVED                         : 196
+RESERVED                         : 197
+RESERVED                         : 198
+RESERVED                         : 199
+RESERVED                         : 200
+GNDIO                            : 201
+RESERVED                         : 202
+RESERVED                         : 203
+RESERVED                         : 204
+RESERVED                         : 205
+RESERVED                         : 206
+RESERVED                         : 207
+RESERVED                         : 208

@@ -1,0 +1,168 @@
+NDB006
+The number of symbol table entries is: 41
+The length of the symbol table is: 1277
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|soma_1bit:sum0|porta_xor:xor1|
+N	|soma_1bit:sum0|porta_and:and1|
+n	|soma_1bit:sum0|porta_xor:xor2|
+"0	|soma_1bit:sum0|porta_and:and2|
+"P	|soma_1bit:sum0|porta_or:or1|
+"n	|soma_1bit:sum1|porta_xor:xor1|
+#0	|soma_1bit:sum1|porta_and:and1|
+#P	|soma_1bit:sum1|porta_xor:xor2|
+#p	|soma_1bit:sum1|porta_and:and2|
+$2	|soma_1bit:sum1|porta_or:or1|
+$P	|soma_1bit:sum2|porta_xor:xor1|
+$p	|soma_1bit:sum2|porta_and:and1|
+%2	|soma_1bit:sum2|porta_xor:xor2|
+%R	|soma_1bit:sum2|porta_and:and2|
+%r	|soma_1bit:sum2|porta_or:or1|
+&2	|soma_1bit:sum3|porta_xor:xor1|
+&R	|soma_1bit:sum3|porta_and:and1|
+&r	|soma_1bit:sum3|porta_xor:xor2|
+'4	|soma_1bit:sum3|porta_and:and2|
+'T	|soma_1bit:sum3|porta_or:or1|
+'r	|soma_1bit:sum4|porta_xor:xor1|
+(4	|soma_1bit:sum4|porta_and:and1|
+(T	|soma_1bit:sum4|porta_xor:xor2|
+(t	|soma_1bit:sum4|porta_and:and2|
+)6	|soma_1bit:sum4|porta_or:or1|
+)T	|soma_1bit:sum5|porta_xor:xor1|
+)t	|soma_1bit:sum5|porta_and:and1|
+*6	|soma_1bit:sum5|porta_xor:xor2|
+*V	|soma_1bit:sum5|porta_and:and2|
+*v	|soma_1bit:sum5|porta_or:or1|
++6	|soma_1bit:sum6|porta_xor:xor1|
++V	|soma_1bit:sum6|porta_and:and1|
++v	|soma_1bit:sum6|porta_xor:xor2|
+,8	|soma_1bit:sum6|porta_and:and2|
+,X	|soma_1bit:sum6|porta_or:or1|
+,v	|soma_1bit:sum7|porta_xor:xor1|
+-8	|soma_1bit:sum7|porta_and:and1|
+-X	|soma_1bit:sum7|porta_xor:xor2|
+-x	|soma_1bit:sum7|porta_and:and2|
+.:	|soma_1bit:sum7|porta_or:or1|
+
+The number of name info structs is : 116
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	L8ef	!	78	17	17	W	a	b	c	h	i	j	k	l	t	u	v	w	x	2	3	4	a0	o
+#	L8ef	!	78	17	17	W	a	b	c	h	i	j	k	l	m	t	u	v	x	y	3	4	a1	p
+$	L8ef	!	78	17	15	a	b	c	h	i	j	k	m	n	t	u	w	x	y	4	a2	q
+%	L8ef	!	78	17	12	d	h	i	j	m	n	t	u	v	x	y	6	a3	r
+&	L8ef	!	78	17	4	n	z	""	7	a4	s
+'	L8ef	!	78	17	2	""	7	a5	t
+(	L8ef	!	78	17	3	"-	9	:	a6	u
+)	L8ef	!	78	17	2	9	:	a7	v
+*	L8ef	!	78	17	16	W	a	b	c	h	i	j	k	l	t	u	v	w	x	2	3	b0	w
++	L8ef	!	78	17	17	W	a	b	c	h	i	j	k	l	m	t	u	w	x	y	3	4	b1	x
+,	L8ef	!	78	17	13	b	c	i	j	k	l	m	n	u	v	w	y	4	b2	y
+-	L8ef	!	78	17	11	d	j	k	l	m	n	v	w	x	y	6	b3	z
+.	L8ef	!	78	17	4	n	z	""	7	b4	{
+/	L8ef	!	78	17	2	""	7	b5	|
+0	L8ef	!	78	17	3	"-	9	:	b6	}
+1	L8ef	!	78	17	2	9	:	b7	~
+2	IeE[	!	79	17	s0	"#
+3	Nj's	!	79	17	3	s1	"$
+4	Nj's	!	79	17	4	s2	"%
+5	IeE[	!	79	17	s3	"&
+6	Nj's	!	79	17	1	s4	"'
+7	Nj's	!	79	17	1	s5	"(
+8	IeE[	!	79	17	s6	")
+9	Nj's	!	79	17	2	s7	"*
+:	Nj's	!	79	17	1	vaium	""
+;	L8ef	!	78	17	17	W	a	b	c	h	i	j	k	l	t	u	v	w	x	2	3	4	vemum	"!
+<	IeEA	N	10	9	:4	#6
+=	IdL3	N	10	9	~4~1	#6
+>	IeEA	"0	10	9	:4	#G
+?	IdL3	"0	10	9	~4~1	#G
+@	IeEA	"P	34	9	:4	#O
+A	IdL3	"P	34	9	~4~1	#O
+B	IeEA	.	22	9	:4	#-
+C	IdL3	.	22	9	~4~1	#-
+D	IeEA	n	22	9	:4	#?
+E	IeEA	#0	10	9	:4	$"
+F	IdL3	#0	10	9	~4~1	$"
+G	IeEA	#p	10	9	:4	$2
+H	IdL3	#p	10	9	~4~1	$2
+I	IeEA	$2	34	9	:4	$:
+J	IdL3	$2	34	9	~4~1	$:
+K	IeEA	"n	22	9	:4	#x
+L	IdL3	"n	22	9	~4~1	#x
+M	IeEA	#P	22	9	:4	$*
+N	IeEA	$p	10	9	:4	$j
+O	IdL3	$p	10	9	~4~1	$j
+P	IeEA	%R	10	9	:4	$z
+Q	IdL3	%R	10	9	~4~1	$z
+R	IeEA	%r	34	9	:4	%$
+S	IdL3	%r	34	9	~4~1	%$
+T	IeEA	$P	22	9	:4	$b
+U	IdL3	$P	22	9	~4~1	$b
+V	IeEA	%2	22	9	:4	$r
+W	Q<Im	%2	22	9	1	4	1	~4~1	/=
+X	IeEA	&R	10	9	:4	%T
+Y	IdL3	&R	10	9	~4~1	%T
+Z	IeEA	'4	10	9	:4	%d
+[	IdL3	'4	10	9	~4~1	%d
+\	IeEA	'T	34	9	:4	%l
+]	IdL3	'T	34	9	~4~1	%l
+^	IeEA	&2	22	9	:4	%L
+_	IdL3	&2	22	9	~4~1	%L
+`	IeEA	&r	22	9	:4	%\
+a	Q<Im	&r	22	9	1	5	1	~4~1	.k
+b	Q<Im	&r	22	9	1	5	1	~4~2	/5
+c	Q<Im	&r	22	9	1	5	1	~4~3	/E
+d	L7gU	&r	22	9	1	5	~4~4	/Q
+e	IeEA	(4	10	9	:4	&>
+f	IdL3	(4	10	9	~4~1	&>
+g	IeEA	(t	10	9	:4	&N
+h	Q<O9	(t	10	9	2	""	7	1	~4~1	&N
+i	Q<Im	(t	10	9	1	h	1	~4~2	/!
+j	Q<Im	(t	10	9	1	h	1	~4~3	/%
+k	Q<Im	(t	10	9	1	h	1	~4~4	/)
+l	Q<Im	(t	10	9	1	h	1	~4~5	/-
+m	Q<Im	(t	10	9	1	h	1	~4~6	/9
+n	L7gU	(t	10	9	1	h	~4~7	/I
+o	IeEA	)6	34	9	:4	&V
+p	IdL3	)6	34	9	~4~1	&V
+q	IeEA	'r	22	9	:4	&6
+r	IdL3	'r	22	9	~4~1	&6
+s	IeEA	(T	22	9	:4	&F
+t	Q<Im	(T	22	9	1	6	1	~4~1	.o
+u	Q<Im	(T	22	9	1	6	1	~4~2	.s
+v	Q<Im	(T	22	9	1	6	1	~4~3	.w
+w	Q<Im	(T	22	9	1	6	1	~4~4	.{
+x	Q<Im	(T	22	9	1	6	1	~4~5	/1
+y	Q<Im	(T	22	9	1	6	1	~4~6	/A
+z	L7gU	(T	22	9	1	6	~4~7	/M
+{	IeEA	)t	10	9	:4	'(
+|	IdL3	)t	10	9	~4~1	'(
+}	IeEA	*V	10	9	:4	'8
+~	IdL3	*V	10	9	~4~1	'8
+"!	IeEA	*v	34	9	:4	'@
+""	Q<O9	*v	34	9	3	8	9	:	1	~4~1	'@
+"#	IeEA	)T	22	9	:4	&~
+"$	IdL3	)T	22	9	~4~1	&~
+"%	IeEA	*6	22	9	:4	'0
+"&	IeEA	+V	10	9	:4	'p
+"'	IdL3	+V	10	9	~4~1	'p
+"(	IeEA	,8	10	9	:4	("
+")	IdL3	,8	10	9	~4~1	("
+"*	IeEA	,X	34	9	:4	(*
+"+	IdL3	,X	34	9	~4~1	(*
+",	IeEA	+6	22	9	:4	'h
+"-	L7m!	+6	22	9	3	8	9	:	~4~1	'h
+".	IeEA	+v	22	9	:4	'x
+"/	IeEA	-8	10	9	:4	(Z
+"0	IdL3	-8	10	9	~4~1	(Z
+"1	IeEA	-x	10	9	:4	(j
+"2	IdL3	-x	10	9	~4~1	(j
+"3	IeEA	.:	34	9	:4	(r
+"4	IdL3	.:	34	9	~4~1	(r
+"5	IeEA	,v	22	9	:4	(R
+"6	IdL3	,v	22	9	~4~1	(R
+"7	IeEA	-X	22	9	:4	(b

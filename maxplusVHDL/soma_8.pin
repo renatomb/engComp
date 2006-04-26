@@ -1,0 +1,74 @@
+-- Copyright (C) 1988-2001 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "soma_8" ASSIGNED TO AN EPM7032LC44-6
+GND                              : 1
+GND                              : 2
+VCC                              : 3
+s5                               : 4
+vaium                            : 5
+s7                               : 6
+s6                               : 7
+RESERVED                         : 8
+b0                               : 9
+GND                              : 10
+s0                               : 11
+s1                               : 12
+a2                               : 13
+s2                               : 14
+VCC                              : 15
+s3                               : 16
+b5                               : 17
+b4                               : 18
+a4                               : 19
+a5                               : 20
+a7                               : 21
+GND                              : 22
+VCC                              : 23
+RESERVED                         : 24
+RESERVED                         : 25
+RESERVED                         : 26
+RESERVED                         : 27
+RESERVED                         : 28
+b1                               : 29
+GND                              : 30
+s4                               : 31
+b6                               : 32
+b7                               : 33
+a3                               : 34
+VCC                              : 35
+a1                               : 36
+b2                               : 37
+b3                               : 38
+vemum                            : 39
+a0                               : 40
+a6                               : 41
+GND                              : 42
+GND                              : 43
+GND                              : 44
